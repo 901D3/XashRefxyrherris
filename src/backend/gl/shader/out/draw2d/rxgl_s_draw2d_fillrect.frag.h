@@ -1,0 +1,5 @@
+"#version 120\n"
+"\n"
+"uniform         vec4 u_Color;\n"
+"\n"
+"void main( ) { gl_FragColor = u_Color; }\n"

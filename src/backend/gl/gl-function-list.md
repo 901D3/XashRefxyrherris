@@ -1,0 +1,140 @@
+See [docs.gl](https://docs.gl)
+
+Function list that can be compiled for both GL21 and GLES2 without further modding.
+
+- Textures:
+  - glActiveTexture
+  - glBindTexture
+  - glCompressedTexImage2D
+  - glCompressedTexSubImage2D
+  - glCopyTexImage2D
+  - glCopyTexSubImage2D
+  - glDeleteTextures
+  - glGenTextures
+  - glGetTexParameter:
+    - glGetTexParameterfv
+    - glGetTexParameteriv
+  - glIsTexture
+  - glTexImage2D
+  - glTexParameter:
+    - glTexParameterf
+    - glTexParameteri
+    - glTexParameterfv
+    - glTexParameteriv
+  - glTexSubImage2D
+
+- Rendering:
+  - glClear
+  - glClearColor
+  - glClearDepth - glClearDepthf (must wrap)
+  - glClearStencil
+  - glFinish
+  - glFlush
+  - glReadPixels
+
+- Shaders:
+  - glAttachShader
+  - glBindAttribLocation
+  - glCompileShader
+  - glCreateProgram
+  - glCreateShader
+  - glDeleteProgram
+  - glDeleteShader
+  - glDetachShader
+  - glGetActiveAttrib
+  - glGetActiveUniform
+  - glGetAttachedShaders
+  - glGetAttribLocation
+  - glGetProgramInfoLog
+  - glGetShaderInfoLog
+  - glGetShaderSource
+  - glGetUniform:
+    - glGetUniformfv
+    - glGetUniformiv
+  - glGetUniformLocation
+  - glIsProgram
+  - glIsShader
+  - glLinkProgram
+  - glShaderSource
+  - glUniform:
+    - glUniform1f
+    - glUniform2f
+    - glUniform3f
+    - glUniform4f
+    - glUniform1i
+    - glUniform2i
+    - glUniform3i
+    - glUniform4i
+    - glUniform1fv
+    - glUniform2fv
+    - glUniform3fv
+    - glUniform4fv
+    - glUniform1iv
+    - glUniform2iv
+    - glUniform3iv
+    - glUniform4iv
+    - glUniformMatrix2fv
+    - glUniformMatrix3fv
+    - glUniformMatrix4fv
+  - glUseProgram
+  - glValidateProgram
+
+- Buffer Objects:
+  - glBindBuffer
+  - glBufferData
+  - glBufferSubData
+  - glDeleteBuffers
+  - glDisableVertexAttribArray
+  - glDrawArrays
+  - glDrawElements
+  - glEnableVertexAttribArray
+  - glGenBuffers
+  - glGetBufferParameteriv
+  - glGetVertexAttrib:
+    - glGetVertexAttribfv
+    - glGetVertexAttribiv
+  - glGetVertexAttribPointerv
+  - glIsBuffer
+  - glVertexAttrib:
+    - glVertexAttrib1f
+    - glVertexAttrib2f
+    - glVertexAttrib3f
+    - glVertexAttrib4f
+  - glVertexAttribPointer
+
+- State Management:
+  - glBlendColor
+  - glBlendEquation
+  - glBlendEquationSeparate
+  - glBlendFunc
+  - glBlendFuncSeparate
+  - glColorMask
+  - glCullFace
+  - glDepthFunc
+  - glDepthMask
+  - glDepthRange - glDepthRangef (must wrap)
+  - glDisable
+  - glEnable
+  - glFrontFace
+  - glGet:
+    - glGetBooleanv
+    - glGetFloatv
+    - glGetIntegerv
+
+  - glGetError
+  - glHint
+  - glIsEnabled
+  - glLineWidth
+  - glPolygonOffset
+  - glSampleCoverage
+  - glScissor
+  - glStencilFunc
+  - glStencilFuncSeparate
+  - glStencilMask
+  - glStencilMaskSeparate
+  - glStencilOp
+  - glStencilOpSeparate
+  - glViewport
+
+- Utility:
+  - glGetString

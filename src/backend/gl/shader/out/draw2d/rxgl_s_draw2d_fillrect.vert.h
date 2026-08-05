@@ -1,0 +1,7 @@
+"#version 120\n"
+"\n"
+"attribute         vec2 a_Position;\n"
+"\n"
+"void main() {\n"
+"  gl_Position = vec4(a_Position, 0.0, 1.0);\n"
+"}\n"
