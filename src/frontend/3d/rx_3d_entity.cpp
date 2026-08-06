@@ -384,9 +384,6 @@ void Render3D_Entity_DrawBrushEntityModel( ) {
   // force RXSURF flags for every surface emitted from entity's model
   unsigned int surfaceForceFlags = 0;
 
-  // world model has uvs cached
-  if ( entityModel == WORLD_MODEL ) surfaceForceFlags |= RXSURF_UVCACHED;
-
   // new mins and maxs for translated (and rotated) submodel, for culling only
   float newMins[ 3 ];
   float newMaxs[ 3 ];
