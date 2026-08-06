@@ -177,8 +177,7 @@ void Render3D_ModelNodeTraverse( mnode_t* modelNode ) {
       rx_surfaceargs_t rxSurface;
       rxSurface.baseTex = &imageMGR.imageList[ mSurface->texinfo->texture->gl_texturenum ];
       rxSurface.mSurface = mSurface;
-      rxSurface.flags = RXSURF_WORLDMODEL |
-        RXSURF_UVCACHED; // world model uvs is cached so add this flag
+      rxSurface.flags = RXSURF_WORLDMODE;
 
       Render3D_Surface_AddSurface( &rxSurface );
     }
