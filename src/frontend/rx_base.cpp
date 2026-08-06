@@ -344,7 +344,9 @@ GAME_EXPORT void BaseShutdown_( ) {
 
   ENGINE_FREE_POOL( &refctx.memPool );
 
+#ifdef _DEBUG
   _CrtDumpMemoryLeaks( );
+#endif
 }
 
 GAME_EXPORT qboolean BaseInit_( ) {
