@@ -1,10 +1,4 @@
 
-#ifdef GL
-  #pragma message( "GL is defined" )
-#else
-  #pragma message( "GL is NOT defined" )
-#endif
-
 // debug for Windows only
 #ifdef _DEBUG
   #define _CRTDBG_MAP_ALLOC
