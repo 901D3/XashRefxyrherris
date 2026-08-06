@@ -1,0 +1,95 @@
+# clang-format 22
+
+BasedOnStyle: LLVM
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+AlignEscapedNewlines: LeftWithLastLine
+AlignAfterOpenBracket: false
+AlignArrayOfStructures: Right
+AlignConsecutiveAssignments: None
+
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+
+AlignConsecutiveShortCaseStatements:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCaseColons: true
+
+AlignConsecutiveTableGenBreakingDAGArgColons:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+
+AlignOperands: DontAlign
+BreakBeforeBinaryOperators: None
+
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializers: AfterColon
+BreakInheritanceList: AfterComma
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterEnum: false
+  AfterStruct: false
+  AfterFunction: false
+  AfterNamespace: false
+  SplitEmptyFunction: false
+  BeforeElse: true
+
+BreakStringLiterals: false
+BreakTemplateDeclarations: MultiLine
+CompactNamespaces: false
+EmptyLineBeforeAccessModifier: Always
+EnumTrailingComma: Leave
+FixNamespaceComments: true
+IndentPPDirectives: BeforeHash
+
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+AllowShortNamespacesOnASingleLine: true
+
+SortIncludes: Never
+ColumnLimit: 0
+BinPackArguments: true
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+PenaltyBreakBeforeFirstCallParameter: 0
+PenaltyBreakString: 0
+PointerAlignment: Left
+ReferenceAlignment: Right
+NamespaceIndentation: All
+ContinuationIndentWidth: 2
+SpacesInParens: Custom
+SpacesInParensOptions:
+  ExceptDoubleParentheses: true
+  InConditionalStatements: true
+  InCStyleCasts: true
+  InEmptyParentheses: true
+  Other: true
+
+SpaceInEmptyBraces: Always
+SpacesInSquareBrackets: true
+SpacesInAngles: Leave
+QualifierAlignment: Leave
+SpacesInLineCommentPrefix:
+  Minimum: 1
+  Maximum: -1
+
+RemoveBracesLLVM: false
+RemoveEmptyLinesInUnwrappedLines: false
+RemoveParentheses: MultipleParentheses
+RemoveSemicolon: false
+SeparateDefinitionBlocks: Leave
+SkipMacroDefinitionBody: false
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: false
+SpaceBeforeCpp11BracedList: false
+SpaceBeforeJsonColon: false
+SpaceBeforeSquareBrackets: false
