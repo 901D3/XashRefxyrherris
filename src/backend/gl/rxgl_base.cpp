@@ -26,7 +26,7 @@ BACKEND_EXPORT const char *GL_GetRendererConfigName( ) {
 #elif defined( GL21 )
   return GL21_CFGNAME;
 #else
-  return "ref_??";
+  return GL21_CFGNAME;
 #endif
 }
 
