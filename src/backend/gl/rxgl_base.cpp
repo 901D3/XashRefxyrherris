@@ -193,9 +193,7 @@ bool GL_Init( ) {
   if ( !GL_Render3D_BaseInit( ) )
     return false;
 
-  GL_InitGLStates( ); // Force the driver to run completely synchronously on the main thread.
-  // This forces any driver-side crash to happen immediately during your OpenGL call,
-  // keeping your functions in the call stack!
+  GL_InitGLStates( );
   glEnable( GL_DEBUG_OUTPUT );
   glEnable( GL_DEBUG_OUTPUT_SYNCHRONOUS );
 
