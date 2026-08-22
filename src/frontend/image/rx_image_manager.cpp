@@ -120,10 +120,8 @@ GAME_EXPORT int ImageMGR_UpdateImage_( const char* name, rgbdata_t* rgbData, tex
   if ( rgbData->flags & IMAGE_QUAKEPAL ) imageFlags |= TF_QUAKEPAL;
   if ( flags & TF_MAKELUMA ) imageFlags |= IMAGE_MAKE_LUMA;
 
-  // Apply the newly evaluated flags to your image structure
   image->rgbDataFlags |= imageFlags;
 
-  // Pass down the image and raw data to extract pixels
   Image_RGBDataToImage( image, rgbData );
 
   Backend_ImageMGR_LoadImage( image, image->width, image->height );
